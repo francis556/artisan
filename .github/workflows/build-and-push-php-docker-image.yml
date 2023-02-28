@@ -1,4 +1,4 @@
-name: buid-and-push-php-docker-image
+name: buid-and-push-artisan-docker-image
 
 on:
   push:
@@ -27,4 +27,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_ORG }}/php:latest
+          tags: ${{ secrets.DOCKERHUB_ORG }}/artisan:latest
